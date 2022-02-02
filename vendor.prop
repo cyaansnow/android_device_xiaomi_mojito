@@ -15,9 +15,15 @@ persist.vendor.audio.spv3.enable=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 ro.af.client_heap_size_kbyte=7168
 ro.vendor.audio.soundfx.usb=true
+<<<<<<< HEAD
 ro.vendor.audio.us.proximity=true
 ro.vendor.audio.sdk.fluencetype=none
 vendor.audio.adm.buffering.ms=2
+=======
+ro.vendor.audio.afe.record=true
+vendor.audio.adm.buffering.ms=6
+vendor.voice.path.for.pcm.voip=false
+>>>>>>> e29f4e8c (sm6150-common: prop: Checkout with latest miui13 release)
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
@@ -146,6 +152,7 @@ ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
 vendor.display.comp_mask=0
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
+vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_decimation=1
 vendor.display.disable_excl_rect=0
 vendor.display.disable_hw_recovery_dump=1
@@ -205,8 +212,8 @@ persist.vendor.radio.report_codec=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 persist.vendor.radio.sib16_support=1
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
-ro.telephony.iwlan_operation_mode=legacy
+persist.vendor.radio.add_power_save=1
+persist.vendor.radio.enable_temp_dds=true
 
 # USB
 vendor.usb.diag.func.name=diag
