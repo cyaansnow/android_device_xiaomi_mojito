@@ -166,6 +166,15 @@
       "Type": "File"
     },
     {
+      "Name": "F2fsRecessModeEnable",
+      "Path": "/sys/fs/f2fs/sda32/gc_urgent",
+      "Values": [
+        "2",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -270,6 +279,12 @@
       "Value": "1459200000"
     },
     {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "F2fsRecessModeEnable",
+      "Duration": 0,
+      "Value": "2"
+    },
+    {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "PowerHALRenderingState",
       "Duration": 0,
@@ -310,6 +325,12 @@
       "Node": "LLCCBWMinFreq",
       "Duration": 1000,
       "Value": "2597"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "F2fsRecessModeEnable",
+      "Duration": 0,
+      "Value": "2"
     }
   ]
 }
